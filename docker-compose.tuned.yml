@@ -1,0 +1,11 @@
+services:
+  pub:
+    volumes:
+      - ./tuned:/tuned:ro
+    sysctls:
+      - net.ipv4.ipfrag_max_dist=0
+  sub:
+    volumes:
+      - ./tuned:/tuned:ro
+    sysctls:
+      - net.ipv4.ipfrag_max_dist=0

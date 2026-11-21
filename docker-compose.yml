@@ -1,0 +1,29 @@
+services:
+  pub:
+    build: .
+    networks: [dds_net]
+    cap_add: [NET_ADMIN]
+    sysctls:
+      - net.ipv4.ipfrag_high_thresh=134217728
+      - net.ipv4.ipfrag_time=3
+      - net.ipv4.ipfrag_max_dist=0
+    environment:
+      - "RMW_IMPLEMENTATION=${RMW:-rmw_fastrtps_cpp}"
+      - "REL=${REL:-reliable}"
+      - "HZ=${HZ:-30}"
+    command: sleep infinity
+  sub:
+    build: .
+    networks: [dds_net]
+    cap_add: [NET_ADMIN]
+    sysctls:
+      - net.ipv4.ipfrag_high_thresh=134217728
+      - net.ipv4.ipfrag_time=3
+      - net.ipv4.ipfrag_max_dist=0
+    environment:
+      - "RMW_IMPLEMENTATION=${RMW:-rmw_fastrtps_cpp}"
+      - "REL=${REL:-reliable}"
+    command: sleep infinity
+networks:
+  dds_net:
+    driver: bridge

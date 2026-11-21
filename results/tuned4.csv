@@ -1,0 +1,26 @@
+rmw,qos,size,vars,rx,expected,delivered_pct,fps,p50,p95,p99,max,stall_s
+rmw_cyclonedds_cpp,reliable,100KB,[],899,899,100.0,30.0,25.8,26.1,26.2,26.4,0
+rmw_cyclonedds_cpp,reliable,100KB,[],897,897,100.0,30.1,25.8,26.0,26.2,113.9,0
+rmw_cyclonedds_cpp,reliable,100KB,[CYCLONEDDS_URI=file:///tuned/cyc-w.xml],897,897,100.0,30.0,25.8,26.1,26.2,26.9,0
+rmw_cyclonedds_cpp,reliable,100KB,[CYCLONEDDS_URI=file:///tuned/cyc-w.xml],897,897,100.0,30.1,25.8,26.1,26.2,70.1,0
+rmw_cyclonedds_cpp,reliable,100KB,[CYCLONEDDS_URI=file:///tuned/cyc-w.xml],234,880,26.6,7.9,163.2,186.7,190.3,192.6,2
+rmw_cyclonedds_cpp,reliable,100KB,[CYCLONEDDS_URI=file:///tuned/cyc-w.xml],204,882,23.1,6.9,164.7,185.4,187.9,191.2,0
+rmw_cyclonedds_cpp,reliable,100KB,[CYCLONEDDS_URI=file:///tuned/cyc-w.xml],242,873,27.7,8.1,164.2,187.0,190.5,191.6,1
+rmw_cyclonedds_cpp,reliable,40KB,[CYCLONEDDS_URI=file:///tuned/cyc-n1.xml],794,892,89.0,26.6,116.7,173.7,185.3,190.9,0
+rmw_cyclonedds_cpp,reliable,40KB,[CYCLONEDDS_URI=file:///tuned/cyc-n1.xml],810,895,90.5,27.2,104.3,171.1,184.1,191.0,0
+rmw_cyclonedds_cpp,reliable,40KB,[CYCLONEDDS_URI=file:///tuned/cyc-n1.xml],777,893,87.0,26.1,125.9,176.5,185.6,191.0,0
+rmw_cyclonedds_cpp,reliable,40KB,[CYCLONEDDS_URI=file:///tuned/cyc-w.xml],791,893,88.6,26.6,108.7,170.7,184.8,191.2,0
+rmw_cyclonedds_cpp,reliable,40KB,[CYCLONEDDS_URI=file:///tuned/cyc-w.xml],776,896,86.6,26.0,112.9,172.8,186.9,190.3,0
+rmw_cyclonedds_cpp,reliable,40KB,[CYCLONEDDS_URI=file:///tuned/cyc-w.xml],839,893,94.0,28.1,100.6,167.7,182.1,191.9,0
+rmw_fastrtps_cpp,reliable,40KB,[FASTDDS_DEFAULT_PROFILES_FILE=/tuned/fd-fast.xml FASTRTPS_DEFAULT_PROFILES_FILE=/tuned/fd-fast.xml RMW_FASTRTPS_USE_QOS_FROM_XML=1],879,892,98.5,29.5,79.2,142.2,169.1,189.1,0
+rmw_fastrtps_cpp,reliable,40KB,[FASTDDS_DEFAULT_PROFILES_FILE=/tuned/fd-fast.xml FASTRTPS_DEFAULT_PROFILES_FILE=/tuned/fd-fast.xml RMW_FASTRTPS_USE_QOS_FROM_XML=1],885,892,99.2,29.8,80.3,143.6,167.0,191.0,0
+rmw_fastrtps_cpp,reliable,40KB,[FASTDDS_DEFAULT_PROFILES_FILE=/tuned/fd-fast.xml FASTRTPS_DEFAULT_PROFILES_FILE=/tuned/fd-fast.xml RMW_FASTRTPS_USE_QOS_FROM_XML=1],880,891,98.8,29.7,80.5,148.1,173.9,191.6,0
+rmw_cyclonedds_cpp,reliable,100KB,[CYCLONEDDS_URI=file:///tuned/cyc-n1.xml],886,897,98.8,29.8,80.4,157.1,178.8,186.2,0
+rmw_cyclonedds_cpp,reliable,100KB,[CYCLONEDDS_URI=file:///tuned/cyc-n1.xml],884,895,98.8,29.6,67.9,135.3,168.4,189.6,0
+rmw_cyclonedds_cpp,reliable,100KB,[CYCLONEDDS_URI=file:///tuned/cyc-n1.xml],880,895,98.3,29.5,74.3,148.7,174.8,187.4,0
+rmw_cyclonedds_cpp,reliable,100KB,[CYCLONEDDS_URI=file:///tuned/cyc-w.xml],890,896,99.3,29.8,68.3,136.7,166.9,188.9,0
+rmw_cyclonedds_cpp,reliable,100KB,[CYCLONEDDS_URI=file:///tuned/cyc-w.xml],884,895,98.8,29.7,68.4,145.1,168.7,189.2,0
+rmw_cyclonedds_cpp,reliable,100KB,[CYCLONEDDS_URI=file:///tuned/cyc-w.xml],885,896,98.8,29.6,70.0,150.4,170.4,188.3,0
+rmw_fastrtps_cpp,reliable,100KB,[FASTDDS_DEFAULT_PROFILES_FILE=/tuned/fd-fast.xml FASTRTPS_DEFAULT_PROFILES_FILE=/tuned/fd-fast.xml RMW_FASTRTPS_USE_QOS_FROM_XML=1],894,894,100.0,30.1,66.8,98.5,118.5,184.4,0
+rmw_fastrtps_cpp,reliable,100KB,[FASTDDS_DEFAULT_PROFILES_FILE=/tuned/fd-fast.xml FASTRTPS_DEFAULT_PROFILES_FILE=/tuned/fd-fast.xml RMW_FASTRTPS_USE_QOS_FROM_XML=1],894,894,100.0,30.1,68.6,99.9,121.4,176.0,0
+rmw_fastrtps_cpp,reliable,100KB,[FASTDDS_DEFAULT_PROFILES_FILE=/tuned/fd-fast.xml FASTRTPS_DEFAULT_PROFILES_FILE=/tuned/fd-fast.xml RMW_FASTRTPS_USE_QOS_FROM_XML=1],892,892,100.0,30.0,69.3,105.3,126.6,170.9,0

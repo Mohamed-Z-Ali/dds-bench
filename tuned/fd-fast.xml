@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<profiles xmlns="http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles">
+  <data_writer profile_name="fast_writer" is_default_profile="true">
+    <historyMemoryPolicy>PREALLOCATED_WITH_REALLOC</historyMemoryPolicy>
+    <times>
+      <initialHeartbeatDelay><nanosec>1000000</nanosec></initialHeartbeatDelay>
+      <heartbeatPeriod><nanosec>20000000</nanosec></heartbeatPeriod>
+      <nackResponseDelay><nanosec>1000000</nanosec></nackResponseDelay>
+    </times>
+  </data_writer>
+  <data_reader profile_name="fast_reader" is_default_profile="true">
+    <historyMemoryPolicy>PREALLOCATED_WITH_REALLOC</historyMemoryPolicy>
+    <times>
+      <initialAcknackDelay><nanosec>1000000</nanosec></initialAcknackDelay>
+      <heartbeatResponseDelay><nanosec>1000000</nanosec></heartbeatResponseDelay>
+    </times>
+  </data_reader>
+</profiles>
